@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Perkalian</title>
+        <script>
+            function hitung(){
+                var a = parseInt(document.getElementById("a").value);
+                var b = parseInt(document.getElementById("b").value);
+                var mpy = parseInt(document.getElementById("mpy").value);
+                var i,x;
+                hasil="";
+
+                if(a<b){
+                    for(i=a;i<=b;i++){
+                    x = i*mpy;
+                    hasil= hasil + i + " * " + mpy + " = " + x + "\n";
+                    }
+                }else{
+                    for(i=a;i>=b;i--){
+                    x = i*mpy;
+                    hasil= hasil + i + " * " + mpy + " = " + x + "\n";
+                    }
+                }
+                document.getElementById("txt").value=hasil;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="mpy" placeholder="Perkalian"><br>
+        <input type="text" id="a"placeholder="Input Start"><br>
+        <input type="text" id="b"placeholder="Input Finish"><br>
+        <input type="button" onclick="hitung()" value="Hitung!"><br>
+        <textarea name="txt" id="txt" cols="20" rows="20"></textarea>
+    </body>
+</html>

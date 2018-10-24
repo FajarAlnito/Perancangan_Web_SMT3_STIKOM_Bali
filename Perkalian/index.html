@@ -5,29 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Perkalian</title>
         
-        <script>
-            function hitung(){
-                var a = parseInt(document.getElementById("a").value); 
-                var b = parseInt(document.getElementById("b").value);
-                var mpy = parseInt(document.getElementById("mpy").value);
-                var i,x;
-                hasil="";
-
-                if(a<b){
-                    for(i=a;i<=b;i++){
-                    x = i*mpy;
-                    hasil= hasil + i + " * " + mpy + " = " + x + "\n";
-                    }
-                }else{
-                    for(i=a;i>=b;i--){
-                    x = i*mpy;
-                    hasil= hasil + i + " * " + mpy + " = " + x + "\n";
-                    }
-                }
-                
-                document.getElementById("txt").value=hasil;
-            }
-        </script>
+        <script src="perkalian.js"></script>
  
     </head>
     <body>

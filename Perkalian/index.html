@@ -26,12 +26,16 @@
                 document.getElementById("txt").value=hasil;
             }
         </script>
+ 
     </head>
     <body>
-        <input type="text" id="mpy" placeholder="Perkalian"><br>
-        <input type="text" id="a"placeholder="Input Start"><br>
-        <input type="text" id="b"placeholder="Input Finish"><br>
-        <input type="button" onclick="hitung()" value="Hitung!"><br>
-        <textarea name="txt" id="txt" cols="20" rows="20"></textarea>
+        <h1>Perkalian</h1>
+        <form id="perkalian">
+            <input type="number" id="mpy" placeholder="Perkalian"><br>
+            <input type="number" id="a"placeholder="Input Start"><br>
+            <input type="number" id="b"placeholder="Input Finish"><br>
+            <input type="button" onclick="hitung()" value="Hitung!"><br>
+            <textarea name="txt" id="txt" cols="20" rows="20"></textarea>
+        </form>
     </body>
 </html>
